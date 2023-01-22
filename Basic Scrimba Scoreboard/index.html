@@ -1,0 +1,27 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link href="https://www.fontspace.com/category/scoreboard" rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="column">
+                <h3>HOME</h3>
+                <h2  class='score' id='home-score'>0</h2>
+                    <button class='scorebtn' id='home-score-one' onclick="homeScoreOne()">+1</button>
+                    <button class='scorebtn' id='home-score-two' onclick="homeScoreTwo()">+2</button>
+                    <button class='scorebtn' id='home-score-three' onclick="homeScoreThree()">+3</button>
+            </div>
+            <div class='column'>
+                <button class='resetbtn' onclick="resetScores()">Reset</button>
+            </div>
+            <div class="column">
+                <h3>GUEST</h3>
+                <h2 class='score' id='guest-score'>0</h2>
+                    <button class='scorebtn' id='guest-score-one' onclick="guestScoreOne()">+1</button>
+                    <button class='scorebtn' id='guest-score-two' onclick="guestScoreTwo()">+2</button>
+                    <button class='scorebtn' id='guest-score-three' onclick="guestScoreThree()">+3</button>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
